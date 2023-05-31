@@ -5,26 +5,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doação de Brinquedos</title>
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="../Páginas CSS/sobre.css">
     <meta charset="utf-8">
-    <link rel="icon" href="..//Imagens/DOE MAIS.png">
+    <link rel="icon" href="../Imagens/DOE MAIS.png">
 
   </head>
   <body>
+    
     <header>
-      <div class="container">
-        <h1> Doações</h1>
+      <nav class="nav-bar">
+          <a href="../index.html"><img src="../Imagens/DOE MAIS.png" class="menu-logo" draggable="false"></a>
+           </div>
+  
+           <div class="nav-list">
+              <ul>
+                  <li class="nav-item"><a href="#" class="nav-link">Doações</a></li>
+                  <li class="nav-item"><a href="../Paginas Html/postagem.html" class="nav-link">Publicações</a></li>
+                  <li class="nav-item"><a href="../Paginas Html/sobre.html" class="nav-link">Sobre</a></li>
+              </ul>
+           </div>
+   
+           <div class="login-button">
+              <button><a href="../Paginas Html/index.php">Login</a></button>
+           </div>
+  
+           <div class="mobile-menu-icon">
+              <a href="#" class="menu-link" id="menu">
+                  <i class="fa-solid fa-bars"></i>
+                  </a>
+           </div>
+  
+      </nav>
+  
+      <div class="mobile-menu">
+          <ul>
+      <li class="nav-item"><a href="#" class="nav-link">Doação</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Agenda</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+          </ul>
+  
+          <div class="login-button">
+              <button><a href="#">Login</a></button>
+           </div>
       </div>
+  </header>
 
-      <ul>
-
-        <li class="top" style="float:right"><a class="active" href="../index.html">Home</a></li>
-
-      </ul>
-
-    </header>
-
+  <br>
     <main>
       <div class="container">
         <div class="row">
@@ -62,23 +89,75 @@
     </main>
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h3>Sobre Nós</h3>
-            <p>Somos uma organização sem fins lucrativos dedicada a fornecer brinquedos para crianças em necessidade. Trabalhamos com doações de pessoas e empresas para ajudar a melhorar a vida das crianças.</p>
+      <div class="footer-content">
+      <div class="footer-contacts">
+          <img src="../Imagens/DOE MAIS.png" class="foo-logo">
+          <p>Doe Mais</p>
+
+          <div class="footer-social-media">
+              <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" class="footer-link" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+              </a>
+
+              <a href="#" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              </a>
           </div>
-          <div class="col-sm-6">
-            <h3>Redes Sociais</h3>
-            <ul>
-              <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
-              <li><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
-              <li><a href="#"><i class="fab fa-instagram-square"></i> Instagram</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </footer>
+
+      <ul class="footer-list">
+          <li>
+              <h3>Blog</h3>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Tech</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Adventures</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Musics</a>
+          </li>
+      </ul>
+
+      <ul class="footer-list">
+          <li>
+              <h3>Products</h3>
+          </li>
+          <li>
+              <a href="#" class="footer-link">App</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Desktop</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Cloud</a>
+          </li>
+      </ul>
+      
+      <div class="footer-subscribe">
+          <h3 class="c-h3">Subscribe</h3>
+
+          <p>
+              Enter your email to get notified about our news solutions
+          </p>
+          <div class="input-group">
+              <input type="email" id="email">
+              <button>
+                  <i class="fa-regular fa-envelope"></i>
+              </button>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &#169
+      2023 All Rights Reserved
+  </div>
+  </footer>
 
   </body>
 </html>
