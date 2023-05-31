@@ -67,19 +67,18 @@
     color: orange;
 }
 
-.login-button button{
-    border: none;
-    background-color: orange;
+.login-button-menu{
     padding: 10px 15px;
     border-radius: 5px;
     transition: 0.4s;
 }
 
-.login-button:hover{
+.login-button-menu:hover{
     transition: 0.8;
+    background-color: orange;
 }
 
-.login-button button a{
+.login-button-menu button a{
     text-decoration: none;
     color: #fff;
     font-weight: 500;
