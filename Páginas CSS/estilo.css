@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: orange;
+    background-color: red;
 }
 
 /* Menu Responsivo */
@@ -89,7 +89,7 @@ body{
 
      @media screen and(max-width: 730px) {
         .nav-bar{
-            padding: 1.5rem 4rem;
+            padding: 1rem 3rem;
 
         }
         .nav-iten{
