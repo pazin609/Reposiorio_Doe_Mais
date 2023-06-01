@@ -309,7 +309,7 @@ footer{
     border-radius: 4px;
 }
 
-.input-group input{
+.input-group input{ 
     all: unset;
     padding: 0.75rem;
     width: 100%;
@@ -328,7 +328,7 @@ footer{
 }
 
 .input-group button:hover{
-    opacity: 0.8;
+    opacity: 0.1;
 }
 
 .footer-copyright{
