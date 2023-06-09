@@ -40,6 +40,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 }
 
 ?>  
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>  
@@ -54,10 +55,14 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 </head>
   
       <body>
+      <div class="text-login">
+        <b>Área de Login</b>
+      </div>
 
         <section class="area-login">
           <div class="login">
            <div>
+           
             <img class="logo-login" src="../Imagens/DOE MAIS.png">
            </div>
 

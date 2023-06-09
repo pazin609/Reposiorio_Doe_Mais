@@ -9,6 +9,12 @@ body{
     background-color: orange;
 }
 
+.informe-cadastro{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
 .area-cadastro{
     display: flex;
     justify-content: center;
@@ -16,6 +22,7 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+    margin-top: 1%;
 }
 
 .cadastro{

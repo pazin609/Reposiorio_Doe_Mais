@@ -2,7 +2,7 @@
 include('conexao.php');
 
 if(isset($_POST['Cadastrar'])) {
-    
+
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     
@@ -26,6 +26,9 @@ if(isset($_POST['Cadastrar'])) {
 </head>
 
 <body>
+      <div class="informe-cadastro">
+        <b>Área de Cadastro</b>
+      </div>
 
         <section class="area-cadastro">
           <div class="cadastro">
