@@ -1,8 +1,50 @@
+<?php 
+include('conexao.php');
+
+if(isset($_POST['email']) || isset($_POST['senha'])) {
+
+
+    if(strlen($_POST['email']) == 0){
+      echo "Preencha seu Email";
+    } else if(strlen($_POST['senha']) == 0){
+      echo "Preencha sua senha";
+    } else {
+
+      $email = $mysqli->real_escape_string($_POST['email']);
+      $senha = $mysqli->real_escape_string($_POST['senha']);
+
+      $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+      $sql_query =  $mysqli->query($sql_code) or die("Falha na excução do código SQL" . $mysqli->error);
+    
+      $quantidade = $sql_query->num_rows;
+
+    if($quantidade == 1) {
+
+      $usuario = $sql_query->fetch_assoc();
+
+      if(!isset($_SESSION)){
+        session_start();
+      }
+
+      $_SESSION['id'] = $usuario['id'];
+      $_SESSION['name'] = $usuario['id'];
+
+      header("Location: ../index.html");
+
+      } else {
+        echo "Falha ao logar! Email ou Senha incorreto";
+      }
+
+    }
+
+}
+
+?>  
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>  
 
-    <title> Agenda</title>
+    <title>Área de Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,12 +61,12 @@
             <img class="logo-login" src="../Imagens/DOE MAIS.png">
            </div>
 
-           <form>
-              <input type="text" name="nome" placeholder="Nome de Usuário" autofocus>
+           <form action="" method="POST">
+              <input type="text" name="email" placeholder="E-mail" autofocus>
               <input type="password" name="senha" placeholder="*********">
               <input type="submit" value="Entrar">
             </form>
-       <p class="text-cont">Ainda não tem uma conta?<a href="#">Criar conta</a></p>
+       <p class="text-cont">Ainda não tem uma conta?<a href="cadastrar.php">Criar conta</a></p>
 
    </div>
   </section>

@@ -7,11 +7,9 @@
 
 body{
     background-color: orange;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
 }
 
-.area-login{
+.area-cadastro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +18,7 @@ body{
     align-items: center;
 }
 
-.login{
+.cadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +29,7 @@ body{
     border-radius: 10px;
 }
 
-.login form{
+.cadastro form{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -47,7 +45,7 @@ a{
 p{
     color: white;
 }
-.login input{
+.cadastro input{
     margin-top: 10px;
     border: none;
     height: 30px;
@@ -61,7 +59,7 @@ p{
     font-size: 14px;
 }
 
-.logo-login{
+.logo-cadastro{
     width: 5rem;
     height: auto;
 }
