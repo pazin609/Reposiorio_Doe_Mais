@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,11 +13,48 @@ body{
 
 .area-login{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
 .login{
-    background-color: #F5F5F5	;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFD700;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+
+.login input{
+    margin-top: 10px;
+    border: none;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+}
+
+.input::placeholder{
+    color: #171717;
+    font-size: 14px;
+}
+
+.logo-login{
+    width: 5rem;
+    height: auto;
 }
