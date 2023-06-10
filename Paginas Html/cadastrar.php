@@ -1,12 +1,14 @@
 <?php
-include('conexao.php');
+if(isset($_POST['email'])) {
 
-if(isset($_POST['Cadastrar'])) {
+  include('conexao.php');
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     
-    $result = mysqli_query($mysqli, "INSERT INTO usuarios(email, senha) VALUES ('$email', '$senha')");
+    $mysqli->query("INSERT INTO usuarios(email, senha) VALUES('$email', '$senha')");
+
+    header("Location: index.php");
 }
 
 

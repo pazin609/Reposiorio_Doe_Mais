@@ -112,62 +112,8 @@ margin-top: 0.5%;
 /* Fim Menu Responsivo */
 
 
-.row{
-  margin: 0px;
-  padding: 0px;
-}
 
-.small{
-  font-size: 13px;
-}
-
-.post-content{
-  background-color: #fff;
-  box-shadow: 0px 0px 2px 2px #999;
-  border-radius: 1px;
-  padding: 10px;
-}
-
-.post-content h4{
-  font-weight: normal;
-}
-
-.post-content img{
-  width: 150px;
-  height: 130px;
-}
-
-.post-content .button-publi{
-  text-align: right;
-  padding: 10px;
-}
-
-.button-publi{
-  text-align: right;
-  background-color: orange;
-  border-color: #24252a;
-  text-decoration: none;
-}
-
-a{
-  color: black;
-  position: left;
-}
-
-
-
-.button-publi:hover{
-  opacity: 0.8;
-  
-}
-
-.post-content .button-publi .btn-info{
-  border-radius: 0px;
-  padding: 5px 25px 5px 25px;
-}
-
-
-/* Início Rodapé */
+/*ESTILO DO RODAPÉ*/
 
 :root{
   --color-neutral-0: #0c0c0c;
@@ -180,7 +126,7 @@ a{
 footer{
   width: 100%;
   color: var(--color-neutral-40);
-  margin-top: 300px;
+  margin-top: 1000px;
 }
 
 .foo-logo{
@@ -273,7 +219,7 @@ footer{
   border-radius: 4px;
 }
 
-.input-group input{
+.input-group input{ 
   all: unset;
   padding: 0.75rem;
   width: 100%;
@@ -289,11 +235,11 @@ footer{
   border: 0px 4px 4px 0px;
   cursor: pointer;
   transition: all 0.4s;
-  right: 100;
+  margin-left: 0%;
 }
 
 .input-group button:hover{
-  opacity: 0.8;
+  opacity: 0.1;
 }
 
 .footer-copyright{

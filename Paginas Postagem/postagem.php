@@ -1,7 +1,12 @@
+<?php 
+include_once('settings.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>  
-    <title> Agenda</title>
+    <title>Área de Publicações</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +17,23 @@
  </head>
 
     <body>
+        <div class="body">
+         <?php 
 
+    if(isset($_GET['pagina'])){
+        $do = ($_GET['pagina']);
+    } else {
+        $do = "inicio";
+    }
+
+    if(file_exists("paginas/" .$do. ".php")){
+        include("paginas/" .$do. ".php");
+    } else {
+        echo "Página nao encontrada";
+    }
+
+         ?>
+        </div>
 
       <header>
         <nav class="nav-bar">
@@ -22,7 +43,7 @@
              <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="../Paginas Html/doacoes.php" class="nav-link">Doações</a></li>
-                    <li class="nav-item"><a href="../Paginas Html/postagem.html" class="nav-link">Publicações</a></li>
+                    <li class="nav-item"><a href="../Paginas Postagem/postagem.php" class="nav-link">Publicações</a></li>
                     <li class="nav-item"><a href="../Paginas Html/sobre.html" class="nav-link">Sobre</a></li>
                 </ul>
              </div>
@@ -53,35 +74,6 @@
         </div>
     </header>
     
-
-
-
-<br>
-      <div class="row">
-        <div class="col-sm-6 offset-md-3">
-
-          <div class="post-content">
-
-          <h4>Titulo da Publicação</h4>
-
-          <span class="text-muted small"><i class="fa-solid fa-user"></i>
-          Pedarthur - <i class="far fa-clock"></i> 07/05/2023 ás 21:47</span> 
-
-          <div class="media">
-          <img class="mr-3" src="../Imagens/DOE MAIS.png">
-          
-          <div class="media-body">
-            Minha Publicação. Minha Publicação.  Minha Publicação.  Minha Publicação.
-            Minha Publicação. Minha Publicação.  Minha Publicação.  Minha Publicação.  
-            Minha Publicação. Minha Publicação.  Minha Publicação.  Minha Publicação. 
-            Minha Publicação. Minha Publicação.  Minha Publicação.  Minha Publi... 
-              <button class="button-publi"><a href="#">Leia Mais</a></button>
-          
-             </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <footer>
         <div class="footer-content">
@@ -140,7 +132,6 @@
             <p>
                 Enter your email to get notified about our news solutions
             </p>
-
             <div class="input-group">
                 <input type="email" id="email">
                 <button>
@@ -148,14 +139,12 @@
                 </button>
             </div>
         </div>
-        
       </div>
       <div class="footer-copyright">
         &#169
         2023 All Rights Reserved
     </div>
     </footer>
-
     </body>
 
 </html>
