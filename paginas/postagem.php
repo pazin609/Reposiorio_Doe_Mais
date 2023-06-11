@@ -1,5 +1,5 @@
 <?php 
-include_once('settings.php');
+include_once('../settings/settings.php');
 
 ?>
 
@@ -20,17 +20,6 @@ include_once('settings.php');
         <div class="body">
          <?php 
 
-    if(isset($_GET['pagina'])){
-        $do = ($_GET['pagina']);
-    } else {
-        $do = "inicio";
-    }
-
-    if(file_exists("paginas/" .$do. ".php")){
-        include("paginas/" .$do. ".php");
-    } else {
-        echo "Página nao encontrada";
-    }
 
          ?>
         </div>
@@ -145,6 +134,7 @@ include_once('settings.php');
         2023 All Rights Reserved
     </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 
 </html>
