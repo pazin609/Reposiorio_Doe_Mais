@@ -1,19 +1,22 @@
 <?php 
 include('conexao.php');
 
-if(isset($_POST['email']) || isset($_POST['senha'])) {
+if(isset($_POST['email']) || isset($_POST['usuario']) || isset($_POST['senha'])) {
 
 
     if(strlen($_POST['email']) == 0){
       echo "Preencha seu Email";
+    } else if(strlen($_POST['usuario']) == 0){
+      echo "Preencha o seu nome do seu Usuário";
     } else if(strlen($_POST['senha']) == 0){
       echo "Preencha sua senha";
     } else {
 
       $email = $mysqli->real_escape_string($_POST['email']);
+      $usuario = $mysqli->real_escape_string($_POST['usuario']);
       $senha = $mysqli->real_escape_string($_POST['senha']);
 
-      $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+      $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND usuario = '$usuario' AND senha = '$senha'";
       $sql_query =  $mysqli->query($sql_code) or die("Falha na excução do código SQL" . $mysqli->error);
     
       $quantidade = $sql_query->num_rows;
@@ -68,6 +71,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
            <form action="" method="POST">
               <input type="text" name="email" placeholder="E-mail" autofocus>
+              <input type="text" name="usuario" placeholder="Usuario" autofocus>
               <input type="password" name="senha" placeholder="*********">
               <input type="submit" value="Entrar">
             </form>

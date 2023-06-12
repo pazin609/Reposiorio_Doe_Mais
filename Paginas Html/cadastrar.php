@@ -4,9 +4,10 @@ if(isset($_POST['email'])) {
   include('conexao.php');
 
     $email = $_POST['email'];
+    $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
     
-    $mysqli->query("INSERT INTO usuarios(email, senha) VALUES('$email', '$senha')");
+    $mysqli->query("INSERT INTO usuarios(email, usuario, senha) VALUES('$email', '$usuario', '$senha')");
 
     header("Location: index.php");
 }
@@ -40,6 +41,7 @@ if(isset($_POST['email'])) {
 
            <form action="cadastrar.php" method="POST">
               <input type="text" name="email" placeholder="E-mail" autofocus>
+              <input type="text" name="usuario" placeholder="Usuário" autofocus>
               <input type="password" name="senha" placeholder="*********">
               <input type="submit" value="Cadastrar">
             </form>
