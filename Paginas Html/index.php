@@ -17,7 +17,7 @@ if(isset($_POST['email']) || isset($_POST['usuario']) || isset($_POST['senha']))
       $senha = $mysqli->real_escape_string($_POST['senha']);
 
       $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND usuario = '$usuario' AND senha = '$senha'";
-      $sql_query =  $mysqli->query($sql_code) or die("Falha na excução do código SQL" . $mysqli->error);
+      $sql_query =  $mysqli->query($sql_code) or die("Falha na excução do código SQL" . $mysqli->$error);
     
       $quantidade = $sql_query->num_rows;
 
@@ -75,6 +75,7 @@ if(isset($_POST['email']) || isset($_POST['usuario']) || isset($_POST['senha']))
               <input type="password" name="senha" placeholder="*********">
               <input type="submit" value="Entrar">
             </form>
+
        <p class="text-cont">Ainda não tem uma conta?<a href="cadastrar.php">Criar conta</a></p>
 
    </div>

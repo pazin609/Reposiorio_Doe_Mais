@@ -19,7 +19,7 @@ include_once "../../lib/includes.php";
 				$_SESSION['usuarioSenha'] = $dados['senha'];
 
 
-				header("Location: index.php");
+				header("Location: index	.php");
 
 			}else{
 				echo "<div class='alert alert-danger'>Usuário ou senha inválido.</div>";

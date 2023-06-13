@@ -20,7 +20,7 @@
            <div class="nav-list">
               <ul>
                   <li class="nav-item"><a href="../Paginas Html/doacoes.php" class="nav-link">Doações</a></li>
-                  <li class="nav-item"><a href="../Paginas Postagem/postagem.php" class="nav-link">Publicações</a></li>
+                  <li class="nav-item"><a href="../postagem-9/admin/pags/login.php" class="nav-link">Publicações</a></li>
                   <li class="nav-item"><a href="../Paginas Html/sobre.html" class="nav-link">Sobre</a></li>
               </ul>
            </div>
@@ -36,21 +36,11 @@
            </div>
   
       </nav>
-  
-      <div class="mobile-menu">
-          <ul>
-      <li class="nav-item"><a href="#" class="nav-link">Doação</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Agenda</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-          </ul>
-  
-          <div class="login-button">
-              <button><a href="#">Login</a></button>
-           </div>
-      </div>
   </header>
 
-
+    <div class="logo-gestos">
+      <img src="../Imagens/main_logo_gestos_white.png" </>
+    </div>
 
   <footer>
         <div class="footer-content">

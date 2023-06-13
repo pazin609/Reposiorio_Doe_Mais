@@ -96,6 +96,14 @@ header{
   /* Fim Menu */
   
 
+  /* Links Doações */
+
+  .logo-gestos{
+   margin-top: 100px;
+  }
+
+  /* Fim Links Doações */
+
 
   /* Estilo do Footer */
 
@@ -232,20 +240,6 @@ footer{
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
-}
-
-@media screen and(max-width: 768px) {
-    .footer-content{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media screen and(max-width: 426px) {
-    .footer-content{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-    }
 }
 
 /* Fim do Estilo do Footer */
