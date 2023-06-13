@@ -1,5 +1,5 @@
 <?php
-include_once("../../lib/includes.php");
+include_once('../../lib/includes.php');
 
 	$idPost = addslashes($explode['1']);
 	$query = $con->prepare("SELECT * FROM posts WHERE id = ?");

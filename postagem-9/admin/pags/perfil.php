@@ -1,5 +1,6 @@
 <?php
-include_once("../../lib/includes.php");
+include_once('../../lib/includes.php');
+include_once('login.php');
 
 	$idUser = $_SESSION['usuarioID'];
 	$query = $con->prepare("SELECT * FROM usuarios WHERE id = ?");

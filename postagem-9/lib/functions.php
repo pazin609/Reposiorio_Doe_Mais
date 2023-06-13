@@ -15,12 +15,6 @@
 		$ext = ".php";
 		
 
-		
-		if(file_exists($dir.$explode['0'].$ext)){
-			require_once($dir.$explode['0'].$ext);
-		}else{
-			echo "<div class='alert alert-danger'>Página não encontrada</div>";
-		}
 	}
 
 	function gera_titulo($titulo, $isAdmin, $con){

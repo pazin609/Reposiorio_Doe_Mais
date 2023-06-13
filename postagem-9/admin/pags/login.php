@@ -1,6 +1,6 @@
 <?php
+include_once "../../lib/includes.php";
 
-include_once('../../lib/includes.php');
 	if(isset($_POST['env']) && $_POST['env'] == "log"){
 		if($_POST['usuario'] && $_POST['senha']){
 			$usuario = addslashes($_POST['usuario']);
@@ -50,7 +50,7 @@ include_once('../../lib/includes.php');
 				<form method="POST">
 					<input type="text" name="usuario" class="form-control" placeholder="Usuário"><br>
 					<input type="password" name="senha" class="form-control" placeholder="**********"><br>
-					<input type="submit" value="Entrar" class="btn btn-outline-primary btn-lg btn-block">
+					<input type="submit" value="Entrar" class="btn-outline-primary">
 					<input type="hidden" name="env" value="log">
 				</form>
 			</div>
