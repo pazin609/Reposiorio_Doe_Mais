@@ -38,8 +38,15 @@
       </nav>
   </header>
 
-    <div class="logo-gestos">
-      <img src="../Imagens/main_logo_gestos_white.png" </>
+    <div class="logos-area-doacao">
+        <div class="logos-body">
+     <a href="https://gestos.colabore.org/doe-10/single_step"> <img src="../Imagens/main_logo_gestos_white.png" class="ma-logo"> </a>
+    
+     <img src="../Imagens/vakinha-logo.png" class="vak-logo">
+     <a href="https://www.vakinha.com.br/"><button class="button-logo">Clique Aqui!</button></a>
+
+     
+        </div>
     </div>
 
   <footer>

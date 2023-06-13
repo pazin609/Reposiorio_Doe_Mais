@@ -98,9 +98,19 @@ header{
 
   /* Links Doações */
 
-  .logo-gestos{
-   margin-top: 100px;
-  }
+ .button-logo{
+    background-color: white;
+ }
+
+ img{
+    width: 10000px;
+    height: 10000px;
+ }
+
+ .vak-logo{
+    width: 10px;
+    height: 100px;
+ }
 
   /* Fim Links Doações */
 
