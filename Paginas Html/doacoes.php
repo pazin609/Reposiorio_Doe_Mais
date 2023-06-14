@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" type="text/css" href="../Páginas CSS/doacoes.css">
-    <title>Encaminhamento de Doações</title>
+    <title>Área de Doações</title>
 </head>
 
 <body>
@@ -65,26 +65,6 @@
         </div>
     </div>
 
-
-    <div class="log-link">
-        <div class="btn-sc">
-
-            <div class="img flutuante">
-        <a href="https://santacasace.org.br" ><img src="../Imagens/santacasa.png" class="santacasa-logo"></a>
-            </div>
-
-            <div class="img flutuante">
-        <a href="https://mesabrasil.sesc-ce.com.br/"><img src="../Imagens/Mesa-Sesc-Cor.png" class="mesasesc-logo"></a>
-        </div>
-
-            <div class="img flutuante">
-        <a href="  https://naacao.com.br/" ><img src="../Imagens/Logonacao.png" class="mesasesc-logo"></a>
-            </div>
-
-          
-    </div>
-    </div>
-   
      
 
   <footer>
