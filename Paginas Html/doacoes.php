@@ -38,19 +38,56 @@
       </nav>
   </header>
 
-    <div class="logos-area-doacao">
-        <div class="logos-body">
-     <a href="https://gestos.colabore.org/doe-10/single_step"> <img src="../Imagens/main_logo_gestos_white.png" class="ma-logo"> </a>
-    
-     <img src="../Imagens/vakinha-logo.png" class="vak-logo">
-     <a href="https://www.vakinha.com.br/"><button class="button-logo">Clique Aqui!</button></a>
+    <div class="log-link">
+     <div class="logo-body">
 
-     
+        <div class="img flutuante">
+     <a href="https://gestos.colabore.org/doe-10/single_step"><img src="../Imagens/main_logo_gestos_white.png" class="gestos-logo"></a>
+        </div>
+
+        <div class="space-mid">
+         <div class="img flutuante">    
+     <a href="https://bora.org.br/"><img src="../Imagens/logo-bora-pra-rua-.png" class="bora-logo"></a>
+            </div>
+        </div>
+
+        <div class="space-mid">
+        <div  class="img flutuante">
+     <a href="https://doe.teto.org.br/" ><img src="../Imagens/main_Logo_TETO_RGB_branco.png" class="teto-logo"></a>
+        </div>
+        </div>
+        
+        <div  class="img flutuante">
+     <a href="https://cedecaceara.org.br/" ><img src="../Imagens/logocedeca.png" class="cedeca-logo"></a>
+        </div>
+
+       
         </div>
     </div>
 
+
+    <div class="log-link">
+        <div class="btn-sc">
+
+            <div class="img flutuante">
+        <a href="https://santacasace.org.br" ><img src="../Imagens/santacasa.png" class="santacasa-logo"></a>
+            </div>
+
+            <div class="img flutuante">
+        <a href="https://mesabrasil.sesc-ce.com.br/"><img src="../Imagens/Mesa-Sesc-Cor.png" class="mesasesc-logo"></a>
+        </div>
+
+            <div class="img flutuante">
+        <a href="  https://naacao.com.br/" ><img src="../Imagens/Logonacao.png" class="mesasesc-logo"></a>
+            </div>
+
+          
+    </div>
+    </div>
+   
+     
+
   <footer>
-        <div class="footer-content">
         <div class="footer-contacts">
             <img src="../Imagens/DOE MAIS.png" class="foo-logo">
             <p>Doe Mais</p>

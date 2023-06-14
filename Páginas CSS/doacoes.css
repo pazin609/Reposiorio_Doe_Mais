@@ -98,19 +98,89 @@ header{
 
   /* Links Doações */
 
- .button-logo{
-    background-color: white;
+  .logo-body{
+    width: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    margin-top: 4%;
+  }
+
+ .space-mid{
+    padding: 0 50%;
  }
 
- img{
-    width: 10000px;
-    height: 10000px;
+ .gestos-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
  }
 
- .vak-logo{
-    width: 10px;
+ .teto-logo{
+   
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+
+ .bora-logo{
+    margin-top: -10%;
+    width: 150px;
+    height: 105px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.btn-sc{
+    margin-top: 5%;
+    margin-left: 7%;
+}
+ 
+.mesasesc-logo{
+    width: 170px;
     height: 100px;
- }
+
+}
+
+.espaco{
+    padding: 0 50%;
+}
+
+ .img{  
+    padding: 0 50%;
+    display: inline-block;  
+    padding: 0.8em 1.2em;    
+    background-color:#24252a;  
+    text-decoration: none;  
+    color: #ffffff;
+    border-radius: 20px;
+    font-family:'open_sansregular';  
+} 
+     
+.flutuante { 
+  display: inline-block;  
+  -webkit-transition-duration: 0.4s;  
+  transition-duration: 0.4s;  
+  -webkit-transition-property: -webkit-transform;  
+  transition-property: transform;  
+  -webkit-transform: translateZ(0);  
+  -ms-transform: translateZ(0);  
+  transform: translateZ(0);  
+  box-shadow: 0px 4px 2px 0px rgba(98, 98, 98, 0.69);
+  }  
+      
+.flutuante:hover {  
+  -webkit-transform: translateY(-5px);  
+  -ms-transform: translateY(-5px);  
+  transform: translateY(-5px);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.69);  
+ } 
 
   /* Fim Links Doações */
 
@@ -252,4 +322,18 @@ footer{
     font-weight: 100;
 }
 
+@media screen and(max-width: 768px) {
+    .footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+  }
+  
+  @media screen and(max-width: 426px) {
+    .footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+  }
+  
 /* Fim do Estilo do Footer */
